@@ -1,0 +1,188 @@
+* {
+    font-family: 'Vazirmatn', 'Lalezar';
+}
+
+input {
+    accent-color: rgb(65, 45, 64);
+}
+
+.header {
+    background-color: rgb(97, 87, 87);
+    border-radius: 50px 0 0 50px;
+}
+.title {
+    margin: 0;
+    padding: 20px 50px;
+    font-size: 70px;
+    font-family: 'LaleZar';
+    color: rgb(239, 168, 243);
+}
+.brifing {
+    font-size: 25px;
+    max-width: 400px;
+    margin-right: 150px;
+    padding-bottom: 30px;
+    color: rgb(179, 168, 243);
+    font-weight: bold;
+}
+
+.full-name {
+    border: solid 2px rgb(47, 47, 47);
+    border-radius: 0 50px 50px 0;
+    background-color: rgb(239, 168, 243);
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.name-input {
+    padding-right: 20px;
+    width: stretch;
+    height: 50px;
+    margin: 70px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(126, 126, 126);
+    background-color: rgb(241, 180, 245);
+}
+.name-input::placeholder {
+    font-size: 20px;
+}
+.name-input:focus {
+    border: rgb(97, 87, 87) solid 2px ;
+    outline: none;
+}
+
+.check-radio-etc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.drink-radio {
+    border-radius: 30px 0 0 30px;
+    background-color: rgb(97, 87, 87);
+    padding: 50px 0;
+}
+
+.hate-check {
+    border-radius: 50px 30px 30px 50px;
+    background-color: rgb(97, 87, 87);
+    padding: 50px 0;
+}
+
+.height-drop {
+    border-radius: 50px 30px 30px 50px;
+    background-color: rgb(97, 87, 87);
+    padding: 50px 0;
+}
+
+.height-select {
+    height: 40px;
+    padding: 0 30px;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.drink-question, .hate-question, .height-question {
+    margin: 0;
+    padding: 0 30px 0 50px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.drink-option, .hate-option {
+    color: rgb(239, 168, 243);
+    font-size: 20px;
+    padding: 5px 50px;
+}
+.drink-option>input, .hate-option>input {
+    width: 15px;
+    height: 15px;
+}
+
+.button-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    min-width: 700px;
+    height: 70px;
+    gap: 30px;
+
+    margin: 30px;
+    justify-self: center;
+}
+
+.submit {
+    width: stretch;
+    background-color: rgb(207, 111, 212);
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.1s;
+}
+.submit:hover {
+    background-color: rgb(192, 102, 197);
+}
+.submit:active {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.421);
+}
+
+.reset {
+    width: stretch;
+    background-color: rgb(140, 119, 119);
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.1s;
+}
+.reset:hover {
+    background-color: rgb(122, 108, 108);
+}
+.reset:active {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.421);
+}
+
+.pop-up {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+
+    background-color: rgb(246, 187, 249);
+    border-radius: 60px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+.pop-text>p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.close {
+    top: 30px;
+    right: 30px;
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(0, 0, 0, 0.248);
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: all 0.1s;
+}
+.close:hover {
+    background-color: rgba(0, 0, 0, 0.248);
+}
+.close:active {
+    background-color: rgba(0, 0, 0, 0.421);
+}
